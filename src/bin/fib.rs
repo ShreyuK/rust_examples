@@ -1,10 +1,7 @@
 fn main() {
-    print!("{}", fib(4));
+    print!("{}", fib(10));
 }
 
 fn fib(n: u32) -> u32 {
-    if n <= 1 {
-        return n;   
-    }
-    fib(n - 1) + fib(n - 2)
+    if n <= 1 { n } else { fib(n - 1) + fib(n - 2) }
 }

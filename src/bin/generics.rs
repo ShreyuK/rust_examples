@@ -4,7 +4,8 @@ fn main() {
     println!("Max int: {}, Max char: {}", max, big_char);
 }
 
-fn largest<T: PartialOrd>(a: T, b: T) -> T {
+// A generic function to find the largest of two values
+fn largest<T: PartialOrd>(a: T, b: T) -> T { // T must implement PartialOrd to allow comparison
     if a > b {
         a
     } else {

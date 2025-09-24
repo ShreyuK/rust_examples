@@ -7,7 +7,5 @@ fn is_even(num: i32) -> bool {
         true
     } else {
         false
-    }
-
-    
+    } 
 }
